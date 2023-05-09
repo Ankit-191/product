@@ -17,13 +17,13 @@ const RelatedProduct = () => {
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1,
+      arrows: false,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1
-            
           }
         },
         {
@@ -63,7 +63,7 @@ const RelatedProduct = () => {
         </Tab>
       </Tabs>
 
-      <h2 className='ff_poppins fw_600 fs_30 mt-5 pt-5 pb-4'>RELATED PRODUCT</h2>
+      <h2 className='ff_poppins fw_600 fs_30 mt-md-5 pt-5 pb-4'>RELATED PRODUCT</h2>
        <Slider {...relatedproduct} className='pt-2'>
           <div className='px-0 pb-4 mb-3'>
             <Shoesbox shoes={redshoes}/>
