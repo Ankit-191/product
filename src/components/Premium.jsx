@@ -69,13 +69,13 @@ const Premium = () => {
                     <div className='d-flex align-items-center pt-3 mt-1'>
                         <p className='ff_poppins fw_500 fs_20 m-0'>Size: </p>
                         <div className='ms-3 size_border'>
-                            <select className='custom_select border-0'>
-                                <option value="0" className='ff_josefin fw_400 fs_20 clr_gray'>S</option>
-                                <option value="1" className='ff_josefin fw_400 fs_20 clr_gray'>6</option>
-                                <option value="2" className='ff_josefin fw_400 fs_20 clr_gray'>7</option>
-                                <option value="3" className='ff_josefin fw_400 fs_20 clr_gray'>8</option>
-                                <option value="4" className='ff_josefin fw_400 fs_20 clr_gray'>9</option>
-                                <option value="5" className='ff_josefin fw_400 fs_20 clr_gray'>10</option>
+                            <select className='custom_select ff_josefin fw_400 fs_20 clr_gray w-100 text-center border-0'>
+                                <option value="0">S</option>
+                                <option value="1">6</option>
+                                <option value="2">7</option>
+                                <option value="3">8</option>
+                                <option value="4">9</option>
+                                <option value="5">10</option>
                             </select>
                         </div>
                     </div>
