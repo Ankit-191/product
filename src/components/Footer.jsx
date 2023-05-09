@@ -7,7 +7,7 @@ const Footer = () => {
     <>
         <section className='bg_0D0D0D pt-1'>
             <Container className='py-4 pb-5'>
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo" className='logohover'/>
                 <Row className='pb-2'>
                     <Col lg={4} xl={5}>
                         <p className='ff_poppins fw_400 fs_16 clr_white opacity_6 mw_448'>Sed nec ultricies felis, vitae facilisis ipsum. Morbi id turpis euismod, rhoncus tortor quis, lobortis sapien. Sed imperdiet nulla in leo ullamcorper, in finibus elit porta. </p>
@@ -25,23 +25,23 @@ const Footer = () => {
                     </Col>
                     <Col lg={8} xl={7}>
                         <Row>
-                            <Col xs={6} md={3} className="mt-4 mt-lg-0 d-flex flex-column">
+                            <Col xs={6} md={3} className="mt-4 mt-lg-0 d-flex flex-column footertexthover">
                                 <p className='ff_poppins fw_600 fs_18 clr_white '>CUSTOM LINKS</p>
                                 <a href="#" className='ff_poppins fw_400 fs_18 clr_white opacity_7 pt-lg-2 pb-2 pb-lg-3 '>Lorem ipsum</a>
                                 <a href="#" className='ff_poppins fw_400 fs_18 clr_white opacity_7'>Lorem ipsum</a>
                             </Col>
-                            <Col xs={6} md={3} className="mt-4 mt-lg-0 d-flex flex-column">
+                            <Col xs={6} md={3} className="mt-4 mt-lg-0 d-flex flex-column footertexthover">
                                 <p className='ff_poppins fw_600 fs_18 clr_white '>PRODUCTS</p>
                                 <a href="#" className='ff_poppins fw_400 fs_18 clr_white opacity_7 pt-lg-2 pb-2 pb-lg-3 '>Lorem ipsum</a>
                                 <a href="#" className='ff_poppins fw_400 fs_18 clr_white opacity_7 pb-lg-3 pb-2'>Lorem ipsum</a>
                                 <a href="#" className='ff_poppins fw_400 fs_18 clr_white opacity_7'>Lorem ipsum</a>
                             </Col>
-                            <Col xs={6} md={3} className="mt-4 mt-lg-0 d-flex flex-column">
+                            <Col xs={6} md={3} className="mt-4 mt-lg-0 d-flex flex-column footertexthover">
                                 <p className='ff_poppins fw_600 fs_18 clr_white '>OUR COMPANY</p>
                                 <a href="#" className='ff_poppins fw_400 fs_18 clr_white opacity_7 pt-lg-2 pb-2 pb-lg-3 '>Lorem ipsum</a>
                                 <a href="#" className='ff_poppins fw_400 fs_18 clr_white opacity_7'>Lorem ipsum</a>
                             </Col>
-                            <Col xs={6} md={3} className="mt-4 mt-lg-0 d-flex flex-column">
+                            <Col xs={6} md={3} className="mt-4 mt-lg-0 d-flex flex-column footertexthover">
                                 <p className='ff_poppins fw_600 fs_18 clr_white '>YOUR ACCOUNT</p>
                                 <a href="#" className='ff_poppins fw_400 fs_18 clr_white opacity_7 pt-lg-2 pb-2 pb-lg-3 '>Lorem ipsum</a>
                                 <a href="#" className='ff_poppins fw_400 fs_18 clr_white opacity_7 '>Lorem ipsum</a>

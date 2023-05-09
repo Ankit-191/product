@@ -8,8 +8,8 @@ const Header = () => {
     <>
         <Container>
             <div className='d-flex justify-content-between ptb_19_15'>
-                <img src={logo} alt="" />
-                <img src={shop} alt=""/>
+                <img src={logo} alt="logo" className='d-none d-lg-block logohover'/>
+                <img src={shop} alt="adds" className='w_100'/>
             </div>
         </Container>   
     </>

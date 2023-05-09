@@ -21,11 +21,11 @@ const Premium = () => {
   return (
     <>
         <Container className='pt-3 pb-2'>
-            <Row className='py-5 my-4 gap-5'>
+            <Row className='py-5 my-4'>
 
-                <Col>
-                    <img src={heroshose} alt="shoes" className='w-100'/>
-                    <Row className='justify-content-between pt_30'>
+                <Col lg={6} className='imgcrpointer'>
+                    <img src={heroshose} alt="shoes" className='w-100 minh_588'/>
+                    <Row className=' pt_30'>
                         <Col>
                             <img src={black} alt="black" className='w-100' />
                         </Col>
@@ -40,7 +40,7 @@ const Premium = () => {
                         </Col>
                     </Row>
                 </Col>
-                <Col xl={6}> 
+                <Col lg={6} className='ps-xl-5'> 
                     <p className='ff_poppins fw_600 fs_30 clr_black pt-4'>PREMIUM MENS SPORTS LATHER KEDS</p>
                     <div className='d-flex gap-1 align-items-center'>
                         <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@ const Premium = () => {
                     <p className='m -0 py-4 mt-1 ff_poppins fw_400 fs_20 clr_black opacity_6'>Sed nec ultricies felis, vitae facilisis ipsum. Morbi id turpis euismod, rhoncus tortor quis, lobortis sapien. Sed imperdiet nulla in leo ullamcorper, in finibus elit porta. Sed eget congue neque, mattis finibus neque. In vel dolor ac augue pretium </p>
                     <div className='d-flex align-items-center pt-sm-5 mt-3'>
                         <p className='ff_poppins fw_500 fs_20 m-0'>Qty: </p>
-                        <div className='qty d-flex align-items-center gap-2 ff_josefin fw_400 fs_20 clr_555555'><p className='m-0'  onClick={decrease}>-</p> <p className='mb-0 pt-1'>{first}</p> <p className='m-0' onClick={increase}>+</p> </div>
+                        <div className='qty d-flex align-items-center gap-3 ff_josefin fw_400 fs_20 clr_555555'><p className='m-0'  onClick={decrease}>-</p> <p className='mb-0 pt-1'>{first}</p> <p className='m-0' onClick={increase}>+</p> </div>
                         <button className='btn_addchart ff_poppins fw_500 fs_20 clr_white'>Add to Cart</button>
                     </div>
                     <div className='d-flex align-items-center pt-3 mt-1'>
@@ -81,7 +81,7 @@ const Premium = () => {
                     </div>
                     <div className='d-flex pt-3 mt-1 align-items-center'>
                         <p className='ff_poppins fw_500 fs_20 m-0'>Color: </p>
-                        <div className='d-flex gap-2 ps-4'>
+                        <div className='d-flex gap-2 ps-4 color_hover'>
                             <div className='color_box bg_CC111C'> </div>
                             <div className='color_box bg_AA9E78'> </div>
                             <div className='color_box bg_black'> </div>
@@ -89,11 +89,11 @@ const Premium = () => {
                         </div>
                     </div>
                     <div className='d-flex gap_31 pt-4 mt-1'>
-                        <p className='ff_poppins fw_300 fs_16 clr_222222'> <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <p className='ff_poppins fw_300 fs_16 clr_222222 crsor_pointer'> <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.6" d="M4.00977 0C2.07977 0 0.509766 1.57 0.509766 3.5C0.509766 5.08 1.56977 6.403 3.00977 6.837V13.997C3.00877 14.176 3.03677 15.778 4.18377 16.928C4.89177 17.64 5.83977 18 6.99977 18V20L10.9998 17L6.99977 14V16C5.17677 16 5.01577 14.466 5.00977 14V6.837C6.44977 6.403 7.50977 5.08 7.50977 3.5C7.50977 1.57 5.93877 0 4.00977 0ZM4.00977 5C3.18277 5 2.50977 4.327 2.50977 3.5C2.50977 2.673 3.18277 2 4.00977 2C4.83677 2 5.50977 2.673 5.50977 3.5C5.50977 4.327 4.83677 5 4.00977 5ZM17.0098 13.163V5.997C17.0048 4.391 15.9328 2 12.9998 2V0L8.99977 3L12.9998 6V4C14.8288 4 15.0008 5.539 15.0098 6V13.163C13.5698 13.597 12.5098 14.92 12.5098 16.5C12.5098 18.43 14.0798 20 16.0098 20C17.9398 20 19.5098 18.43 19.5098 16.5C19.5098 14.92 18.4498 13.597 17.0098 13.163ZM16.0098 18C15.1828 18 14.5098 17.327 14.5098 16.5C14.5098 15.673 15.1828 15 16.0098 15C16.8368 15 17.5098 15.673 17.5098 16.5C17.5098 17.327 16.8368 18 16.0098 18Z" fill="black"/>
 </svg>
 </span> Compare</p>
-                        <p className='ff_poppins fw_300 fs_16 clr_222222'> <span><svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <p className='ff_poppins fw_300 fs_16 clr_222222 crsor_pointer'> <span><svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.6" d="M10.5006 18.0258L10.1526 17.7358C2.67062 11.6458 0.640625 9.4998 0.640625 6.0198C0.640625 3.1198 2.96062 0.799805 5.86062 0.799805C8.23862 0.799805 9.57263 2.1338 10.5006 3.1778C11.4286 2.1338 12.7626 0.799805 15.1406 0.799805C18.0406 0.799805 20.3606 3.1198 20.3606 6.0198C20.3606 9.4998 18.3306 11.6458 10.8486 17.7358L10.5006 18.0258ZM5.86062 1.9598C3.59862 1.9598 1.80062 3.7578 1.80062 6.0198C1.80062 8.9778 3.65662 10.9498 10.5006 16.5178C17.3446 10.9498 19.2006 8.9778 19.2006 6.0198C19.2006 3.7578 17.4026 1.9598 15.1406 1.9598C13.1106 1.9598 12.0086 3.1778 11.1386 4.1638L10.5006 4.9178L9.86262 4.1638C8.99262 3.1778 7.89062 1.9598 5.86062 1.9598Z" fill="black"/>
 </svg>
 </span> Wishlist</p>

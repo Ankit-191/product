@@ -9,6 +9,7 @@
 }
 
 :root {
+  --fs-10: 10px;
   --fs-12: 12px;
   --fs-16: 16px;
   --fs-18: 18px;
@@ -109,6 +110,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.fs_10 {
+  font-size: var(--fs-10);
+}
+
 .fs_12 {
   font-size: var(--fs-12);
 }
@@ -192,28 +197,50 @@
 .btn_addchart {
   background-color: var(--clr-green);
   border: none;
-  padding: 10px 29px;
-  border-radius: 21px;
+  padding: 11px 29px;
+  border-radius: 35px;
   margin-left: 15px;
+  transition: all 0.3s linear;
+}
+
+.btn_addchart:hover {
+  background-color: #2c773e;
 }
 
 .qty {
   border: 1px solid #E8E8E8;
-  border-radius: 21px;
-  padding: 4px 24px;
+  border-radius: 35px;
+  padding: 8px 24px;
   margin-left: 21px;
   cursor: pointer;
 }
 
-.size_border{
-  padding: 6px 10px;
+.size_border {
+  padding: 10px 13px;
   border: 1px solid #E8E8E8;
-  border-radius: 21px;
+  border-radius: 31px;
 }
 
 .custom_select {
   outline: none;
-  padding: 0px 25px 0px 0px;
+  padding: 0px 58px 0px 0px;
+}
+
+.color_hover div:hover {
+  cursor: pointer;
+}
+
+.crsor_pointer {
+  cursor: pointer;
+}
+
+.premium_icon svg {
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.premium_icon svg:hover {
+  transform: translateY(-5px);
 }
 
 .color_box {
@@ -249,10 +276,8 @@
 
 /* foot Looker box */
 .footlooker_box {
-  width: 312px;
-  height: 488px;
   background: #FFFFFF;
-  box-shadow: 23px 44px 47px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
@@ -271,17 +296,34 @@
   border: 0.311111px solid #E8E8E8;
   border-radius: 6.53333px;
   padding: 4px 10px;
+  transition: all 0.2s linear;
+}
+
+
+.bestprice_btn:hover {
+  background-color: #2c773e;
 }
 
 .size_number {
-  padding: 7px 32px;
+  background-color: var(--clr-white);
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 40px;
+  transition: all 0.2s linear;
+}
+
+.size_number:hover {
+  background-color: gray;
+  color: var(--clr-white);
 }
 
 /*-10% OFF*/
 .transform_off {
   transform: rotate(-41.69deg);
+}
+
+.border_1 {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px 10px 0px 0px;
 }
 
 /*-10% OFF position*/
@@ -293,11 +335,26 @@
 .prlatedproduct_box {
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 17px;
+  transition: all 0.3s linear;
+}
+
+.prlatedproduct_box:hover {
+  transform: rotate(1deg);
 }
 
 .btn_page {
   box-shadow: 3px 5px 22px rgba(0, 0, 0, 0.08);
   border-radius: 9.21875px;
+}
+
+.storeicon svg:hover path {
+  fill: #2c773e;
+  cursor: pointer;
+}
+
+.imgborder {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 17px;
 }
 
 .btn_next {
@@ -308,6 +365,7 @@
 
 .btnhover button:hover {
   background: #FF4400;
+  border: 1px solid #FF4400;
   color: var(--clr-white);
 }
 
@@ -321,7 +379,7 @@
 
 .nav-tabs {
   border: none !important;
-  gap: 90px !important;  
+  gap: 90px !important;
 }
 
 .nav-tabs .nav-link:hover {
@@ -357,9 +415,74 @@
   flex: none !important;
 }
 
+.nav_hover a:hover {
+  font-weight: 700;
+  color: var(--clr-black);
+}
+
+.imgcrpointer img:hover {
+  cursor: pointer;
+  border: 2px solid gray;
+}
+
+.footertexthover a:hover {
+  opacity: 1;
+  font-weight: 500;
+  color: var(--clr-white);
+}
+
+.logohover:hover {
+  cursor: pointer;
+}
+
+.icon {
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: translateY(-5px);
+}
+
+
+@media (max-width:992px) {
+  .w_100 {
+    width: 100%;
+  }
+
+  .w_42 {
+    width: 42px;
+  }
+
+  .mobile_screen {
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    justify-content: center;
+    gap: 30px;
+    background-color: #F3F3F3;
+    z-index: 50;
+    transition: all 0.3s linear;
+  }
+
+  .z_51 {
+    z-index: 51;
+  }
+
+  .naV_0 {
+    left: 0;
+  }
+}
+
 @media (min-width:992px) {
   .mw_448 {
     max-width: 448px;
+  }
+
+  .minh_588 {
+    min-height: 588px;
   }
 }
 
@@ -386,6 +509,7 @@
     --fs-30: 30px;
   }
 }
+
 @media (max-width:992px) {
   :root {
     --fs-12: 12px;
@@ -397,15 +521,20 @@
     --fs-30: 30px;
   }
 }
+
 @media (max-width:425px) {
   :root {
     --fs-12: 12px;
     --fs-16: 16px;
     --fs-18: 16px;
     --fs-20: 15px;
-    --fs-24: 24px;
+    --fs-24: 20px;
     --fs-25: 25px;
     --fs-30: 25px;
+  }
+
+  .btn_addchart {
+    padding: 11px 20px;
   }
 }
 

@@ -16,7 +16,7 @@ const Airmax = () => {
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -24,14 +24,14 @@ const Airmax = () => {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 700,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -41,6 +41,7 @@ const Airmax = () => {
     };
   return (
     <>
+    <section className='overflow-hidden'>
         <Container>
             <p className='ff_poppins fw_500 fs_25'>You can buy the Nike Air Max 97 Men's Shoe - White here:</p>        
 
@@ -58,7 +59,8 @@ const Airmax = () => {
             <Footerlooker footimage={slidestep}/>
           </div>
         </Slider>
-        </Container>   
+        </Container> 
+    </section>  
     </>
   )
 }
